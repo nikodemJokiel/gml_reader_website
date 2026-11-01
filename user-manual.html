@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instrukcja obsługi — GML Reader</title>
+  <meta name="description" content="Instrukcja instalacji, konfiguracji i codziennego użytkowania programu GML Reader.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://gml-reader.pages.dev/user-manual.html">
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/icon.png" alt="" class="brand-icon" width="24" height="24">
+        <span>GML Reader</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link">Strona główna</a></li>
+        <li><a href="download.html" class="nav-link">Pobieranie</a></li>
+        <li><a href="user-manual.html" class="nav-link active">Instrukcja obsługi</a></li>
+        <li><a href="contact.html" class="nav-link">Kontakt</a></li>
+        <li><button class="theme-btn" id="theme-toggle" aria-label="Zmień motyw" title="Zmień motyw"></button></li>
+      </ul>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu nawigacji" title="Menu">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M3,18V16H21v2H3Zm0-5V11H21v2H3ZM3,8V6H21V8H3Z" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div class="manual-layout">
+      <!-- Fixed spis treści po lewej stronie (poza mobile) -->
+      <aside class="manual-sidebar">
+        <nav class="toc-sticky" aria-label="Spis treści">
+          <div class="toc-title">Spis treści</div>
+          <ol class="toc-list">
+            <li><a href="#pobieranie">1. Pobieranie i instalacja</a></li>
+            <li><a href="#licencja">2. Aktywacja licencji</a></li>
+            <li><a href="#szybki-start">3. Szybki start</a></li>
+            <li><a href="#kolumny">4. Opis wybranych kolumn w generowanych arkuszach</a></li>
+            <li>
+              <a href="#funkcje">5. Opis funkcjonalności</a>
+              <ul class="toc-sublist">
+                <li><a href="#gorne-menu">5.1 Górne menu</a></li>
+                <li><a href="#pliki-wejsciowe">5.2 Pliki wejściowe</a></li>
+                <li><a href="#folder-zapisu">5.3 Zapis plików Excel</a></li>
+                <li><a href="#status-i-logi">5.4 Pasek statusu, sterowanie i logi</a></li>
+              </ul>
+            </li>
+            <li><a href="#problemy">6. Rozwiązywanie problemów</a></li>
+            <li><a href="#normalne-zachowania">7. Normalne zachowania programu</a></li>
+            <li><a href="#kontakt-sekcja">8. Kontakt</a></li>
+          </ol>
+        </nav>
+      </aside>
+
+      <!-- Główna treść instrukcji -->
+      <div class="manual-content">
+        <div class="page-header">
+          <h1 class="page-title">Instrukcja obsługi — GML Reader</h1>
+          <p class="page-lead">Instrukcja instalacji, konfiguracji i codziennego użytkowania programu.</p>
+        </div>
+
+        <!-- 1. Pobieranie i instalacja -->
+        <section id="pobieranie">
+          <h2>1. Pobieranie i instalacja</h2>
+          <p>Pobierz instalator ze strony <a href="download.html">Pobieranie</a> (plik
+            <code>GML_Reader_Setup_vX.X.exe</code>).
+          </p>
+          <p>Uruchom instalator. Jeśli Windows Defender SmartScreen wyświetli ostrzeżenie („System Windows ochronił ten
+            komputer”), kliknij odnośnik <strong>„Więcej informacji”</strong>, a następnie przycisk <strong>„Uruchom
+              mimo to”</strong>.</p>
+          <p>Postępuj zgodnie z poleceniami w instalatorze:</p>
+          <ul>
+            <li>Wskaż, czy program ma być zainstalowany tylko dla obecnego użytkownika/konta Windows („Install for me
+              only”) czy dla wszystkich użytkowników/kont Windows („Install for all users”);</li>
+            <li>Wybierz język instalatora Polski lub Angielski (English);</li>
+            <li>Przeczytaj i zaakceptuj umowę licencyjną;</li>
+            <li>Wybierz lokalizację docelową programu;</li>
+            <li>Wskaż, czy instalator ma utworzyć skróty w Menu Start lub na Pulpicie zaznaczając odpowiednie pola
+              wyboru;</li>
+            <li>Kliknij przycisk <strong>„Instaluj”</strong>.</li>
+          </ul>
+        </section>
+
+        <!-- 2. Aktywacja licencji (screenshot menu usunięty zgodnie z uwagą) -->
+        <section id="licencja">
+          <h2>2. Aktywacja licencji</h2>
+          <p>Program po zainstalowaniu działa w pełni funkcjonalnym trybie demonstracyjnym bez konieczności wpisywania
+            klucza. Jedynym ograniczeniem jest limit do 7 transakcji zapisywanych w wygenerowanym arkuszu Excel.</p>
+
+          <h3>Jak aktywować pełną wersję:</h3>
+          <p>W górnym menu programu kliknij przycisk <strong>„Licencja”</strong>.</p>
+          <p>Wklej otrzymany klucz licencyjny w polu „Klucz licencji” a następnie kliknij <strong>„Aktywuj
+              licencję”</strong>. (Uwaga! Do aktywacji licencji wymagane jest stabilne połączenie z Internetem)</p>
+
+          <h3>Identyfikator komputera (HWID):</h3>
+          <p>Jest to unikalny skrót generowany na podstawie podzespołów Twojego komputera. Służy wyłącznie do powiązania
+            zakupionej licencji ze stacją roboczą. Nie zawiera żadnych danych osobowych ani informacji o plikach.</p>
+
+          <h3>Przycisk <strong>„Synchronizuj”</strong>:</h3>
+          <p>Służy do odświeżenia stanu licencji z serwerem. Użyj go, jeżeli zmieniałeś parametry lub żądałeś
+            dezaktywacji licencji.</p>
+        </section>
+
+        <!-- 3. Szybki start -->
+        <section id="szybki-start">
+          <h2>3. Szybki start</h2>
+          <ol>
+            <li>Kliknij przycisk <strong>„Dodaj plik”</strong> lub po prostu przeciągnij plik (np. <code>.gml</code> lub
+              <code>.gpkg</code>) do okna programu.
+            </li>
+            <li>Kliknij przycisk <strong>„Konwertuj”</strong>.</li>
+            <li>Gotowy plik Excel (<code>.xlsx</code>) zapisze się domyślnie w tym samym folderze, w którym znajduje się
+              konwertowany plik. Możesz też kliknąć przycisk <strong>„Pokaż Excel”</strong> na liście dodanych plików,
+              aby otworzyć folder w którym zapisał się plik .xlsx.</li>
+          </ol>
+        </section>
+
+        <!-- 4. Opis wybranych kolumn — z większymi odstępami, pogrubionymi kodami i separatorem po tabelce -->
+        <section id="kolumny">
+          <h2>4. Opis wybranych kolumn w generowanych arkuszach</h2>
+          <p>Dla transakcji wieloprzedmiotowych (zawierających kilka działek, budynków lub lokali) dane zapisywane są w
+            komórkach po średniku z zachowaniem odpowiadającej kolejności np.</p>
+
+          <table class="version-table">
+            <thead>
+              <tr>
+                <th>Lp.</th>
+                <th>Numer dzialki</th>
+                <th>Sposob uzytkowania</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>40/41; 40/71</td>
+                <td>Grunty zabudowane i zurbanizowane; Grunty rolne</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>30/8; 31/4; 30/5; 31/3; 30/6; 30/2</td>
+                <td>Grunty rolne; Grunty rolne; Grunty rolne; Grunty rolne; Grunty rolne; Grunty lesne</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <hr class="section-separator">
+
+          <div class="column-desc-block">
+            <p><code class="col-name">Powierzchnia [m2]</code>, <code class="col-name">Pow. dzialki [m2]</code>, <code
+                class="col-name">Pow. zsumowana lok. [m2]</code>: w przypadku transakcji wieloprzedmiotowych, w tych
+              kolumnach sumowana jest powierzchnia wszystkich działek lub lokali, do których prawa zostały nabyte w
+              całości (1/1) (powód: uniknięcie zawyżeń spowodowanych dodawaniem powierzchni hali garażowej do której
+              kupujący ma prawo ułamkowe).</p>
+            <p class="manual-highlight"><strong>Te kolumny nadają się do sortowania w Excelu (np. od największej
+                powierzchni).</strong></p>
+          </div>
+
+          <div class="column-desc-block">
+            <p><code class="col-name">Powierzchnie czastkowe [m2]</code>, <code
+                class="col-name">Pow. uzytkowa budynku [m2]</code>, <code
+                class="col-name">Pow. uzytkowa lokalu [m2]</code>: w przypadku transakcji wieloprzedmiotowych
+              powierzchnie poszczególnych (kolejnych) działek, budynków lub lokali są wypisywane po średniku.</p>
+            <p class="manual-highlight"><strong>Z uwagi na strukturę te kolumny NIE nadają się do sortowania w
+                Excelu.</strong></p>
+          </div>
+
+          <div class="column-desc-block">
+            <p><code class="col-name">Cena [PLN]</code>: cena całej transakcji, nawet w przypadku transakcji
+              wieloprzedmiotowych.</p>
+            <p class="manual-highlight"><strong>Ta kolumna nadaje się do sortowania w Excelu.</strong></p>
+          </div>
+
+          <div class="column-desc-block">
+            <p><code class="col-name">Ceny czastkowe [PLN]</code>: w przypadku transakcji wieloprzedmiotowych program
+              pobiera ceny poszczególnych działek, budynków lub lokali i zapisuje je w odpowiedniej kolejności po
+              średniku.</p>
+            <p class="manual-highlight"><strong>Ta kolumna NIE nadaje się do sortowania w Excelu.</strong> (Uwaga!
+              Czasami w przypadku braku cen cząstkowych lub błędnie wpisanych danych w plikach .gml, w tej kolumnie będą
+              pojawiać się kilkukrotnie powtórzone pełne ceny transakcji – nie jest to błąd programu, lecz samego pliku
+              z transakcjami.)</p>
+          </div>
+
+          <div class="column-desc-block">
+            <p><code class="col-name">Cena za m2 [PLN]</code>: powstaje poprzez podzielenie ceny transakcji przez
+              powierzchnię w metrach kwadratowych. W przypadku transakcji wieloprzedmiotowych dzielona jest pełna cena
+              przez zsumowaną powierzchnię wszystkich działek/lokali z transakcji, do których zostały nabyte pełne prawa
+              (1/1).</p>
+          </div>
+
+          <div class="column-desc-block">
+            <p><strong>Puste komórki w niektórych kolumnach:</strong> puste komórki powstają najczęściej z powodu braku
+              konkretnych danych w pliku z transakcjami (np. w pliku .gml), a nie z powodu błędnego działania programu.
+              Dotyczy to zwykle kolumn typu „Info dodatkowe” lub „VAT”, które często nie są uzupełniane w plikach
+              .gml.</p>
+          </div>
+        </section>
+
+        <!-- 5. Opis funkcjonalności -->
+        <section id="funkcje">
+          <h2>5. Opis funkcjonalności</h2>
+
+          <h3 id="gorne-menu">5.1 Górne menu</h3>
+          <div class="screenshot-box">
+            <img src="assets/screenshots/menu.png" alt="Górne menu" class="screenshot-img light-only" width="737"
+              height="77" loading="lazy">
+            <img src="assets/screenshots/menu_d.png" alt="Górne menu" class="screenshot-img dark-only" width="737"
+              height="77" loading="lazy">
+          </div>
+
+          <p><strong>„Kolumny Excela”</strong>: Otwiera okno konfiguratora arkusza wynikowego:</p>
+
+          <div class="screenshot-box">
+            <img src="assets/screenshots/columns.png" alt="Konfigurator kolumn Excela" class="screenshot-img light-only"
+              width="820" height="705" loading="lazy">
+            <img src="assets/screenshots/columns_d.png" alt="Konfigurator kolumn Excela"
+              class="screenshot-img dark-only" width="820" height="705" loading="lazy">
+          </div>
+
+          <ul>
+            <li><strong>Podział na arkusze:</strong> arkusze działek, budynków i lokali są niezależne i można je
+              konfigurować osobno.</li>
+            <li><strong>Włączanie i wyłączanie kolumn:</strong> Odznaczenie pola wyboru przy nazwie kolumny sprawi, że
+              ta kolumna nie pojawi się w wygenerowanym arkuszu Excel.</li>
+            <li><strong>Kolejność kolumn:</strong> Kolejność kolumn w arkuszu można ustalić chwytając i przesuwając
+              kolumny myszką, lub klikając strzałki <strong>„góra”</strong> i <strong>„dół”</strong>.</li>
+            <li>
+              <strong>Zakładka „Ogólne”:</strong>
+              <p><strong>Ustawianie długości skróconego Id:</strong> umożliwia ustawienie z ilu znaków składa się Id
+                transakcji w kolumnie skrócone id. Kolumna przydaje się, przy chęci sprawdzenia danej transakcji w pliku
+                .pdf generowanym równolegle z plikiem .gml przez portal iRzeczoznawca. W plikach pdf często nie jest
+                podawane pełne id transakcji co uniemożliwia wyszukiwanie transakcji za pomocą Ctrl + f i wklejenia
+                skopiowanego pełnego Id transakcji z komórki w excelu (skrócone id rozwiązuje ten problem, bo nie trzeba
+                ręcznie skracać id podczas wyszukiwania).</p>
+            </li>
+          </ul>
+
+          <p><strong>„Kontakt”</strong>: Wyświetla okno z adresem email autora programu.</p>
+          <p><strong>„Licencja”</strong>: Okno zarządzania licencją, podgląd HWID, aktywacja i synchronizacja.</p>
+          <p><strong>„Język (PL / EN)”</strong>: Przełącznik języka interfejsu aplikacji.</p>
+          <p><strong>„Motyw”</strong> (ikonka słońca lub księżyca): Przełącznik motywu ciemnego i jasnego.</p>
+
+          <h3 id="pliki-wejsciowe">5.2 Pliki wejściowe</h3>
+          <div class="screenshot-box">
+            <img src="assets/screenshots/input.png" alt="Menu plików wejściowych" class="screenshot-img light-only"
+              width="922" height="297" loading="lazy">
+            <img src="assets/screenshots/input_d.png" alt="Menu plików wejściowych" class="screenshot-img dark-only"
+              width="922" height="297" loading="lazy">
+          </div>
+
+          <p>Program umożliwia przetwarzanie wsadowe wielu plików w jednej kolejce.</p>
+          <ul>
+            <li><strong>Obsługiwane formaty:</strong> <code>.gml</code>, <code>.gpkg</code>, <code>.shp</code>,
+              <code>.geojson</code>, <code>.kml</code>.
+            </li>
+            <li>Przycisk <strong>„Dodaj plik”</strong> pozwala wybrać konkretne pliki z dysku, które mają zostać dodane
+              do listy.</li>
+            <li>Przycisk <strong>„Wybierz folder”</strong> pozwala wybrać konkretny folder oraz dodaje do listy
+              wszystkie obsługiwane przez program pliki znajdujące się w tym folderze.</li>
+            <li><strong>Przeciągnij i upuść (Drag & Drop):</strong> Pliki można przeciągać bezpośrednio z Eksploratora
+              Windows na obszar listy.</li>
+            <li>Przycisk <strong>„Wyczyść listę”</strong> usuwa wszystkie pozycje z listy.</li>
+            <li><strong>Działanie listy:</strong> Kliknięcie <strong>„Konwertuj”</strong> przetwarza wszystkie pliki
+              znajdujące się na liście. Jeśli nie chcesz przetwarzać danego pliku ponownie, usuń go krzyżykiem
+              <strong>„[x]”</strong> z prawej strony wiersza. Po zakończeniu konwersji przy danym pliku pojawia się
+              przycisk <strong>„Pokaż Excel”</strong> otwierający folder, w którym znajduje się wygenerowany skoroszyt.
+            </li>
+          </ul>
+
+          <h3 id="folder-zapisu">5.3 Zapis plików Excel</h3>
+          <div class="screenshot-box">
+            <img src="assets/screenshots/output.png" alt="Menu zapisu plików" class="screenshot-img light-only"
+              width="920" height="105" loading="lazy">
+            <img src="assets/screenshots/output_d.png" alt="Menu zapisu plików" class="screenshot-img dark-only"
+              width="920" height="105" loading="lazy">
+          </div>
+
+          <p>Domyślnie zaznaczona jest opcja zapisu w folderze pliku źródłowego (plik Excel powstaje w tym samym
+            folderze co plik wejściowy). Można też wpisać ręcznie ścieżkę do innego folderu lub wskazać go przyciskiem
+            <strong>„Przeglądaj...”</strong>.
+          </p>
+
+          <h3 id="status-i-logi">5.4 Pasek statusu, sterowanie i logi</h3>
+          <div class="screenshot-box">
+            <img src="assets/screenshots/convert.png" alt="Pasek statusu, sterowanie i logi"
+              class="screenshot-img light-only" width="917" height="372" loading="lazy">
+            <img src="assets/screenshots/convert_d.png" alt="Pasek statusu, sterowanie i logi"
+              class="screenshot-img dark-only" width="917" height="372" loading="lazy">
+          </div>
+
+          <ul>
+            <li><strong>Pasek statusu:</strong> Na bieżąco pokazuje postęp konwersji oraz wykonywane w danym momencie
+              operacje.</li>
+            <li>Przycisk <strong>„Konwertuj”</strong>: uruchamia przetwarzanie plików z listy.</li>
+            <li>Przycisk <strong>„Przerwij”</strong>: Przerywa proces konwersji plików. (Uwaga! Czasami przerwanie
+              konwersji trwa do kilku/kilkunastu sekund. Jest to normalne zachowanie programu zależne od wielkości pliku
+              oraz momentu w którym konwersja zostanie przerwana)</li>
+            <li><strong>Logi:</strong> Dolne pole tekstowe rejestruje szczegóły techniczne procesu i ewentualne
+              komunikaty o błędach. Przycisk <strong>„Wyczyść logi”</strong> czyści zawartość pola.</li>
+          </ul>
+        </section>
+
+        <!-- 6. Rozwiązywanie problemów -->
+        <section id="problemy">
+          <h2>6. Rozwiązywanie problemów</h2>
+          <ul>
+            <li><strong>Aktywacja a brak internetu:</strong> Połączenie z internetem jest potrzebne tylko podczas
+              aktywacji klucza lub kliknięcia <strong>„Synchronizuj”</strong>. Do samej konwersji plików internet nie
+              jest potrzebny, program działa w pełni offline.</li>
+            <li><strong>Plik Excel jest pusty:</strong> Sprawdź, czy plik GML nie jest uszkodzony oraz czy faktycznie
+              zawiera obiekty rejestru transakcji RCiWN.</li>
+            <li><strong>Program Excel wyrzuca błąd podczas próby otwarcia pliku:</strong> Problem pojawia się w
+              przypadku bardzo dużych plików Excel utworzonych z bardzo dużych zbiorów danych (np. transakcji z kilku
+              lat). Należy próbować otwierać plik Excel „do skutku” lub dać programowi Microsoft Excel trochę czasu na
+              przetworzenie dużego pliku. W każdym z dotychczasowych przypadków błędów Excela, kilkukrotna próba
+              otwarcia rozwiązała problem. Błąd jest związany z wielkością powstałego pliku i nie jest wynikiem błędnego
+              działania programu.</li>
+            <li><strong>Plik nie daje się przeciągnąć do listy konwersji (Drag & Drop nie działa):</strong> Upewnij się,
+              że plik został uprzednio wypakowany z archiwum ZIP lub RAR. Windows blokuje bezpośrednie przeciąganie z
+              wirtualnego podglądu archiwum. Sprawdź też, czy plik ma obsługiwane przez program rozszerzenie.</li>
+            <li><strong>Błąd „permission denied”:</strong> Sprawdź czy nie masz otwartego arkusza Excel o docelowej
+              nazwie (nazwie pliku wejściowego do konwersji) w docelowym folderze zapisu pliku .xlsx. Jeżeli tak to
+              zamknij ten arkusz i spróbuj ponownie.</li>
+            <li><strong>Nieobsługiwany format lub błąd konwersji:</strong> Schematy GML mogą różnić się w zależności od
+              powiatu i oprogramowania ośrodka geodezyjnego. Jeśli dany plik zwraca błąd, przejdź do zakładki <a
+                href="contact.html">Kontakt</a> i prześlij do mnie plik i/lub opis problemu. Postaram się jak
+              najszybciej naprawić program.</li>
+          </ul>
+        </section>
+
+        <!-- 7. Normalne zachowania programu -->
+        <section id="normalne-zachowania">
+          <h2>7. Normalne zachowania programu</h2>
+          <ul>
+            <li><strong>Uruchomienie programu trwa kilka/kilkanaście sekund:</strong> Podczas startu aplikacja
+              inicjalizuje silnik bibliotek przestrzennych (GDAL/OGR).</li>
+            <li><strong>Pliki inne niż .gml przetwarzają się dłużej:</strong> Formaty takie jak .shp czy .gpkg wymagają
+              konwersji pośredniej do formatu roboczego, zanim zostaną wyeksportowane do Excela.</li>
+            <li><strong>Przerwanie konwersji trwa kilka sekund:</strong> Program czeka na bezpieczne domknięcie
+              aktualnie przetwarzanego pliku, aby nie pozostawić uszkodzonego arkusza Excel.</li>
+            <li><strong>Dłuższe otwieranie się okna „Kolumny Excela”.</strong></li>
+            <li><strong>Komunikat Windows SmartScreen o nieznanym programie:</strong> Jest to standardowe zachowanie dla
+              nowego oprogramowania od niezależnych autorów (którzy nie posiadają kosztownego, korporacyjnego
+              certyfikatu podpisu kodu). Program jest czysty i nie stanowi żadnego zagrożenia.</li>
+          </ul>
+        </section>
+
+        <!-- 8. Kontakt — przycisk "Skontaktuj się ze mną" zwykły (nie niebieski) -->
+        <section id="kontakt-sekcja">
+          <h2>8. Kontakt</h2>
+          <p>W razie pytań, problemów z plikiem, propozycji nowych funkcji lub chęci zakupu licencji zapraszam do
+            kontaktu:</p>
+
+          <div class="btn-left">
+            <a href="contact.html" class="btn">Skontaktuj się ze mną</a>
+          </div>
+
+          <div class="btn-group">
+            <a href="index.html" class="btn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M7.83,13l5.6,5.6L12,20L4,12l8-8l1.43,1.4L7.83,11H20v2H7.83Z" />
+              </svg>
+              <span>Powrót do strony głównej</span>
+            </a>
+            <a href="download.html" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12,16L7,11L8.4,9.55l2.6,2.6V4h2v8.15l2.6-2.6L17,11l-5,5ZM6,20q-0.82,0-1.41-0.59T4,18V15H6v3H18V15h2v3q0,0.82-0.59,1.41T18,20H6Z" />
+              </svg>
+              <span>Pobierz i testuj za darmo</span>
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <ul class="footer-nav">
+        <li><a href="index.html">Strona główna</a></li>
+        <li><a href="download.html">Pobieranie</a></li>
+        <li><a href="user-manual.html">Instrukcja obsługi</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+      </ul>
+      <div class="footer-info">
+        <div>GML Reader — Nikodem Jokiel (<a href="mailto:jokiel.nikodem@gmail.com">jokiel.nikodem@gmail.com</a>)</div>
+        <div>© 2026</div>
+      </div>
+      <div class="footer-trademark">Microsoft, Windows oraz Excel są zastrzeżonymi znakami towarowymi firmy Microsoft
+        Corporation w Stanach Zjednoczonych i/lub innych krajach. Wszelkie inne nazwy handlowe i znaki towarowe użyte na
+        stronie należą do ich prawnych właścicieli i zostały użyte wyłącznie w celach informacyjnych.</div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

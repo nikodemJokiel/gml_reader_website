@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+Sitemap: https://gml-reader.pages.dev/sitemap.xml
+
+# Blokada crawlerów AI (zgodnie z planem)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
