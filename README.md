@@ -44,6 +44,7 @@ Gdy pojawi się nowa wersja programu (np. `2.1`):
    - `git add . && git commit -m "Wydanie wersji 2.1" && git push`
    - Cloudflare Pages automatycznie wdroży zmiany w ciągu kilku sekund!
 
+
 ## Wdrożenie na Cloudflare Pages
 
 1. Połącz repozytorium GitHub `nikodemJokiel/gml_reader_website` z Cloudflare Pages.
