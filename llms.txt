@@ -1,0 +1,18 @@
+# GML Reader
+
+> Konwerter plików .gml z transakcjami RCWiN (Rejestru Cen Nieruchomości) do arkuszy kalkulacyjnych Excel (.xlsx).
+
+GML Reader to polski program desktopowy dla systemu Windows przeznaczony dla rzeczoznawców majątkowych, geodetów, pośredników oraz analityków rynku nieruchomości. Umożliwia w pełni lokalną, bezpieczną (offline) konwersję plików wymiany danych katastralnych i ewidencyjnych (GML, GPKG, SHP, GeoJSON, KML) do sformatowanych arkuszy Microsoft Excel.
+
+## Dokumentacja i kluczowe strony
+
+- [Strona główna](https://gml-reader.pages.dev/): Główne możliwości programu, opis konwersji i bezpieczeństwa przetwarzania danych.
+- [Pobieranie programu](https://gml-reader.pages.dev/download.html): Pobieranie instalatora dla systemu Windows (darmowa wersja testowa do 7 transakcji oraz wersja pełna), wymagania systemowe i uwagi o Windows SmartScreen.
+- [Wydanie 2.0](https://gml-reader.pages.dev/versions/2.0.html): Dziennik zmian i lista nowości w wersji 2.0.
+- [Instrukcja obsługi](https://gml-reader.pages.dev/user-manual.html): Kompletny podręcznik użytkownika, instalacja, aktywacja licencji, szybki start, konfigurator kolumn Excela, obsługa transakcji wieloprzedmiotowych oraz rozwiązywanie problemów.
+- [Kontakt i licencje](https://gml-reader.pages.dev/contact.html): Dane kontaktowe autora, informacje o licencjonowaniu i pomoc techniczna.
+
+## Opcjonalne zasoby
+
+- [Mapa witryny (sitemap.xml)](https://gml-reader.pages.dev/sitemap.xml): Struktura adresów URL witryny.
+- [Instalator Windows (v2.0)](https://pub-28962a1361b4497c9d3aa641075ce219.r2.dev/GML_Reader_Setup_v2.0.exe): Bezpośredni plik instalacyjny programu.

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://agenticresourcediscovery.org/spec/schema.json",
+  "name": "GML Reader",
+  "description": "Konwerter plików .gml z transakcjami RCWiN do arkuszy Excel (.xlsx).",
+  "url": "https://gml-reader.pages.dev/",
+  "version": "1.0.0",
+  "publisher": {
+    "name": "Nikodem Jokiel",
+    "email": "jokiel.nikodem@gmail.com"
+  },
+  "resources": [
+    {
+      "name": "Dokumentacja programu (llms.txt)",
+      "type": "text/markdown",
+      "url": "https://gml-reader.pages.dev/llms.txt",
+      "description": "Podsumowanie funkcji programu GML Reader dla modeli językowych i agentów AI."
+    },
+    {
+      "name": "Instrukcja obsługi",
+      "type": "text/html",
+      "url": "https://gml-reader.pages.dev/user-manual.html",
+      "description": "Szczegółowy podręcznik użytkownika programu GML Reader."
+    },
+    {
+      "name": "Instalator programu dla Windows",
+      "type": "application/x-msdownload",
+      "url": "https://pub-28962a1361b4497c9d3aa641075ce219.r2.dev/GML_Reader_Setup_v2.0.exe",
+      "description": "Pakiet instalatora programu GML Reader dla systemu Windows."
+    }
+  ]
+}
