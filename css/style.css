@@ -418,6 +418,14 @@ code.col-name {
   background-color: var(--table-stripe);
 }
 
+.version-note {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-top: -0.65rem;
+  margin-bottom: 1.6rem;
+  line-height: 1.45;
+}
+
 /* Badge NEW — fioletowy, uniesiony wyżej */
 .badge-new {
   display: inline-block;
