@@ -1,6 +1,6 @@
 # GML Reader
 
-> Konwerter plików .gml z transakcjami RCWiN (Rejestru Cen Nieruchomości) do arkuszy kalkulacyjnych Excel (.xlsx).
+> Konwerter plików .gml z transakcjami RCN (Rejestru Cen Nieruchomości) do arkuszy kalkulacyjnych Excel (.xlsx).
 
 GML Reader to polski program desktopowy dla systemu Windows przeznaczony dla rzeczoznawców majątkowych, geodetów, pośredników oraz analityków rynku nieruchomości. Umożliwia w pełni lokalną, bezpieczną (offline) konwersję plików wymiany danych katastralnych i ewidencyjnych (GML, GPKG, SHP, GeoJSON, KML) do sformatowanych arkuszy Microsoft Excel.
 

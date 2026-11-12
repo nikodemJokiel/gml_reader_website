@@ -1,7 +1,7 @@
 {
   "$schema": "https://agenticresourcediscovery.org/spec/schema.json",
   "name": "GML Reader",
-  "description": "Konwerter plików .gml z transakcjami RCWiN do arkuszy Excel (.xlsx).",
+  "description": "Konwerter plików .gml z transakcjami RCN do arkuszy Excel (.xlsx).",
   "url": "https://gml-reader.pages.dev/",
   "version": "2.1.0",
   "publisher": {
