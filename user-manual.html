@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Instrukcja obsługi — GML Reader</title>
-  <meta name="description" content="Instrukcja instalacji, konfiguracji i codziennego użytkowania programu GML Reader.">
+  <meta name="description" content="Kompleksowa instrukcja obsługi programu GML Reader: instalacja w Windows, konfiguracja kolumn Excela, obsługa transakcji wieloprzedmiotowych i pomoc techniczna.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://gml-reader.pages.dev/user-manual.html">
   <link rel="icon" type="image/png" href="assets/icon.png">
@@ -13,16 +13,85 @@
   <meta property="og:site_name" content="GML Reader">
   <meta property="og:type" content="article">
   <meta property="og:title" content="Instrukcja obsługi — GML Reader">
-  <meta property="og:description" content="Instrukcja instalacji, konfiguracji i codziennego użytkowania programu GML Reader.">
+  <meta property="og:description" content="Kompleksowa instrukcja obsługi programu GML Reader: instalacja w Windows, konfiguracja kolumn Excela, obsługa transakcji wieloprzedmiotowych i pomoc techniczna.">
   <meta property="og:url" content="https://gml-reader.pages.dev/user-manual.html">
   <meta property="og:image" content="https://gml-reader.pages.dev/assets/icon.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Strona główna",
+            "item": "https://gml-reader.pages.dev/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Instrukcja obsługi",
+            "item": "https://gml-reader.pages.dev/user-manual.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Czy do konwersji plików w programie GML Reader potrzebny jest internet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Połączenie z internetem jest potrzebne tylko podczas jednorazowej aktywacji klucza licencyjnego lub kliknięcia „Synchronizuj”. Do samej konwersji plików internet nie jest potrzebny – program działa w 100% lokalnie i w pełni offline."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Dlaczego wygenerowany plik Excel jest pusty?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sprawdź, czy plik wejściowy (.gml, .gpkg, .shp) nie jest uszkodzony oraz czy faktycznie zawiera obiekty rejestru transakcji (RCWiN / RCN)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Co zrobić, gdy program Excel wyświetla błąd podczas próby otwarcia wygenerowanego pliku?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Problem ten pojawia się niekiedy w przypadku bardzo dużych plików utworzonych z wielkich zbiorów danych (np. transakcji z kilku lat). Należy ponowić próbę otwarcia lub dać aplikacji Microsoft Excel chwilę na przetworzenie skoroszytu."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Dlaczego plik nie daje się przeciągnąć do listy konwersji (Drag & Drop nie działa)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Upewnij się, że plik został uprzednio wypakowany z archiwum ZIP lub RAR. System Windows blokuje bezpośrednie przeciąganie plików z wirtualnego podglądu archiwum."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Dlaczego podczas instalacji Windows Defender SmartScreen wyświetla ostrzeżenie?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Jest to standardowe zachowanie dla nowego oprogramowania od niezależnych autorów, którzy nie posiadają kosztownego korporacyjnego certyfikatu podpisu kodu. Program jest bezpieczny i czysty. Aby kontynuować instalację, kliknij „Więcej informacji”, a następnie „Uruchom mimo to”."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
   <header class="site-header">
     <div class="header-inner">
       <a href="index.html" class="brand">
-        <img src="assets/icon.png" alt="" class="brand-icon" width="24" height="24">
+        <img src="assets/icon.png" alt="GML Reader" class="brand-icon" width="24" height="24">
         <span>GML Reader</span>
       </a>
       <ul class="nav-links" id="nav-links">
